@@ -75,6 +75,7 @@
 <style type="text/scss" rel="stylesheet/scss" lang="scss" scoped>
   @import "~@/styles/mixin.scss";
   ul {
+    padding-left: 0;
     li {
       list-style: none;
     }
@@ -91,6 +92,9 @@
       flex: 0 0 80px;
       width: 80px;
       background: #f3f5f7;
+      &>li {
+
+      }
       .menu-item {
         display: table;
         height: 54px;

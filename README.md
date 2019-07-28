@@ -78,6 +78,6 @@
 29.组件与组件通信方式，组件与右侧配置样式对话框通信
 30.用router-view 替换component,这样才可以使用keep-alive
 31.组件cache通用初始化设计改造
-32.
+32.Normalize.css是一种CSS reset的替代方案。它在默认的HTML元素样式上提供了跨浏览器的高度一致性。相比于传统的CSS reset，Normalize.css是一种现代的、为HTML5准备的优质替代方案
 
 

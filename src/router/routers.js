@@ -47,30 +47,7 @@ export const constantRouterMap = [
   },
   {
     path: '/',
-    component: Layout,
-    redirect: 'dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
-        name: '首页',
-        meta: { title: '首页', icon: 'index', noCache: true, affix: true }
-      }
-    ]
-  },
-  {
-    path: '/user',
-    component: Layout,
-    hidden: true,
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'center',
-        component: () => import('@/views/system/user/center'),
-        name: '个人中心',
-        meta: { title: '个人中心', icon: 'user' }
-      }
-    ]
+    component: Layout
   }
   // { path: '*', redirect: '/404', hidden: true }
 ]
