@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import '@/styles/index.scss' // global css
 
 import animated from 'animate.css'
@@ -35,6 +37,9 @@ Vue.prototype.$bus = Bus
 Vue.use(animated)
 Vue.use(webAppPlugin)
 Vue.use(permission)
+Vue.use(ElementUI, {
+  i18n: (key, value) => i18n.t(key, value)
+})
 Vue.config.productionTip = false
 
 new Vue({
