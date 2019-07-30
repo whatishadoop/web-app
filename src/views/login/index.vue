@@ -1,7 +1,8 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" label-position="left" label-width="0px" class="login-form">
-      <h3 class="title">OceanMobile 移动端平台</h3>
+      <div class="logo-wrapper"></div>
+      <h3 class="title">湖南省公安厅</h3>
       <el-form-item prop="username">
         <el-input v-model="loginForm.username" type="text" auto-complete="off" placeholder="账号">
           <svg-icon slot="prefix" icon-class="user" class="el-input__icon" style="height: 39px;width: 13px;margin-left: 2px;" />
@@ -14,7 +15,7 @@
       </el-form-item>
       <el-checkbox v-model="loginForm.rememberMe" style="margin:0px 0px 25px 0px;">记住密码</el-checkbox>
       <el-form-item style="width:100%;">
-        <el-button :loading="loading" size="medium" type="primary" style="width:100%;" @click.native.prevent="handleLogin">
+        <el-button :loading="loading" size="medium" type="primary" style="width:100%;" round @click.native.prevent="handleLogin">
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
         </el-button>
@@ -107,13 +108,14 @@
     background-size: cover;
   }
   .title {
-    margin: 0px auto 30px auto;
+    margin: 0px auto 83px auto;
     text-align: center;
     color: #707070;
+    font-size: 26px;
   }
 
   .login-form {
-    width: 365px;
+    width: 340px;
     padding: 25px 25px 5px 25px;
     .el-input {
       height: 38px;
@@ -126,5 +128,14 @@
     font-size: 13px;
     text-align: center;
     color: #bfbfbf;
+  }
+
+  .logo-wrapper {
+    margin: 0px auto 18px auto;
+    width: 80px;
+    height: 80px;
+    background: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;
   }
 </style>
