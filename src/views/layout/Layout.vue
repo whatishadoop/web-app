@@ -11,19 +11,19 @@
 	      <div class="classify-wrapper">
 	        <ul class="classify">
 	          <li class="classify-item">
-	            <div class="icon">后</div>
+	            <div><svg-icon icon-class="taishi" class="icon"/></div>
 	            <p class="list">态势感知</p>
 	          </li>
 	          <li class="classify-item">
-	            <div class="icon">前</div>
-	            <p class="list">全体洞察</p>
+	            <div><svg-icon icon-class="qunti" class="icon"/></div>
+	            <p class="list">群体洞察</p>
 	          </li>
 	          <li class="classify-item">
-	            <div class="icon">测</div>
+	            <div><svg-icon icon-class="tais_sj" class="icon"/></div>
 	            <p class="list">态势数据</p>
 	          </li>
 	          <li class="classify-item">
-	            <div class="icon">维</div>
+	            <div><svg-icon icon-class="qunt_sj" class="icon"/></div>
 	            <p class="list">群体数据</p>
 	          </li>
 	        </ul>
@@ -140,6 +140,7 @@
   	top: 0;
   	left: 0;
   	width: 100%;
+  	overflow: hidden;
 	.header {
 	    position: relative;
 	    overflow: hidden;
@@ -177,15 +178,13 @@
 
 	          .icon {
 	            display: inline-block;
-	            width: 45px;
-	            height: 45px;
+	            width: 60px;
+	            height: 60px;
 	            line-height: 45px;
 	            text-align: center;
 	            border-radius: 50%;
-	            background: #4a95dc;
 	            font-size: 18px;
 	            color: #fff;
-	            margin: 0 0 10px 0;
 	          }
 
 	          .list {
@@ -324,10 +323,11 @@
 	  }
     .tabs {
     	position: relative;
-        overflow: hidden;
-        padding-top: 14px;
+    	padding-top: 14px;
         padding-bottom: 2px;
-        box-shadow: darkgrey 0px 5px 5px 5px ;
+    	height:55px;
+        overflow: hidden;
+        /* box-shadow: darkgrey 0px 5px 5px 5px; */
         .tab {
         	display: flex;
 		    width: 100%;
