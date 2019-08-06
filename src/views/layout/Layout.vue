@@ -38,7 +38,7 @@
         </div>
         <!-- 公告 -->
         <div class="bulletin-wrapper">
-          <span class="bulletin-title"></span>
+          <div class="bulletin-title"><svg-icon icon-class="gaoj" class="icon"/></div>
           <span class="bulletin-text">手机号139824844被告警命中，告警名称手机号139824844被告警命中，告警名称手机号139824844被告警命中，告警名称</span>
         </div>
         <!-- 态势案件 -->
@@ -98,19 +98,19 @@
     <div class="tabs">
       <div class="tab">
         <div class="tab-item">
-          <div><svg-icon icon-class="icon_home_select" class="icon"/></div>
+          <div><svg-icon icon-class="icon_home" class="icon"/></div>
           <p class="name">首页</p>
         </div>
         <div class="tab-item">
-          <div><svg-icon icon-class="icon_home_select" class="icon"/></div>
+          <div><svg-icon icon-class="icon_qtts_selent" class="icon"/></div>
           <p class="name">态势感知</p>
         </div>
         <div class="tab-item">
-          <div><svg-icon icon-class="icon_home_select" class="icon"/></div>
+          <div><svg-icon icon-class="icon_case_selent" class="icon"/></div>
           <p class="name">我的案件</p>
         </div>
         <div class="tab-item">
-          <div><svg-icon icon-class="icon_home_select" class="icon"/></div>
+          <div><svg-icon icon-class="icon_me_select" class="icon"/></div>
           <p class="name">我的</p>
         </div>
       </div>
@@ -207,24 +207,27 @@
 
       .bulletin-wrapper {
         position: relative;
-        height: 20px;
-        line-height: 20px;
+        height: 50px;
+        line-height: 50px;
         margin-top: 32px;
         padding: 0 20px 0 20px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         background: #fff;
-
         .bulletin-title {
           display: inline-block;
           vertical-align: top;
           margin-top: 8px;
-          width: 22px;
-          height: 12px;
+          width: 50px;
+          height: 50px;
           /* @include bg-image('bulletin');*/
           background-size: 22px 12px;
           background-repeat: no-repeat;
+          .icon {
+          	width: 25px;
+            height: 50px;
+          }
         }
 
         .bulletin-text {
@@ -339,18 +342,16 @@
       position: fixed;
       left: 0px;
       bottom: 0px;
-      padding-top: 14px;
-      padding-bottom: 2px;
       z-index: 100;
       width: 100%;
+      line-height: 55px;
       height: 55px;
+      text-align: center;
       overflow: hidden;
       background: #F2F3F7;
       .tab {
         display: flex;
         width: 100%;
-        height: 55px;
-
         .tab-item {
           flex: 1;
           text-align: center;
@@ -363,6 +364,7 @@
           }
 
           .name {
+          	margin-top: -50px;
             font-size: 10px;
           }
         }
