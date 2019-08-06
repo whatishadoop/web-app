@@ -38,7 +38,7 @@
         </div>
         <!-- 公告 -->
         <div class="bulletin-wrapper">
-          <div class="bulletin-title"><svg-icon icon-class="gaoj" class="icon"/></div>
+          <span class="bulletin-title"><svg-icon icon-class="gaoj" class="icon"/></span>
           <span class="bulletin-text">手机号139824844被告警命中，告警名称手机号139824844被告警命中，告警名称手机号139824844被告警命中，告警名称</span>
         </div>
         <!-- 态势案件 -->
@@ -75,7 +75,7 @@
               v-for="(value,index) in [1,2,3]"
               :key="index"
               class="case-item"
-              style="height: 134px;">
+              style="height: 148px;">
               <div><svg-icon icon-class="q2" class="icon"/></div>
               <div class="content">
                 <div class="name">湖南省公安厅</div>
@@ -83,8 +83,8 @@
                 <div class="text">IMSI：460006234567890</div>
                 <div class="text">IMEI：109698888877777</div>
                 <div class="desc">
-                  <span class="count">案件号 9A757DGJK34V5JDG</span>
                   <span class="date">2018.04.23</span>
+                  <span class="detail"><el-button type="primary" size="mini"  round>查看详情</el-button></span>
                 </div>
               </div>
             </li>
@@ -207,8 +207,8 @@
 
       .bulletin-wrapper {
         position: relative;
-        height: 50px;
-        line-height: 50px;
+        height: 20px;
+        line-height: 20px;
         margin-top: 32px;
         padding: 0 20px 0 20px;
         white-space: nowrap;
@@ -218,23 +218,24 @@
         .bulletin-title {
           display: inline-block;
           vertical-align: top;
-          margin-top: 8px;
           width: 50px;
           height: 50px;
           /* @include bg-image('bulletin');*/
           background-size: 22px 12px;
           background-repeat: no-repeat;
           .icon {
-          	width: 25px;
-            height: 50px;
+            vertical-align: top;
+          	width: 48px;
+            height: 24px;
           }
         }
 
         .bulletin-text {
-          vertical-align: top;
-          margin: 0 4px;
+          display: inline-block;
+          margin-top: 2px;
           height: 20px;
           line-height: 20px;
+          vertical-align: top;
           font-size: 14px;
         }
       }
@@ -314,6 +315,10 @@
                   line-height: 14px;
                   font-size: 14px;
                   color: #161619;
+                }
+                .detail {
+                  display: inline;
+                  margin-left: 160px;
                 }
 
                 .date {
