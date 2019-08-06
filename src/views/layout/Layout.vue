@@ -84,7 +84,7 @@
                 <div class="text">IMEI：109698888877777</div>
                 <div class="desc">
                   <span class="date">2018.04.23</span>
-                  <span class="detail"><el-button type="primary" size="mini"  round>查看详情</el-button></span>
+                  <span class="detail"><el-button type="primary" size="mini" round>查看详情</el-button></span>
                 </div>
               </div>
             </li>
@@ -357,6 +357,7 @@
       .tab {
         display: flex;
         width: 100%;
+        height: 55px;
         .tab-item {
           flex: 1;
           text-align: center;
